@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <form name="f">
+        <input
+          type="text"
+          name="inputfield"
+          placeholder="0"
+          id="inputF"
+        /><br />
+        <input type="button" value="1" onclick="f.inputfield.value+=1" />
+        <input type="button" value="2" onclick="f.inputfield.value+=2" />
+        <input type="button" value="3" onclick="f.inputfield.value+=3" />
+        <input type="button" value="+" onclick="add()" />
+        <br />
+        <input type="button" value="4" onclick="f.inputfield.value+=4" />
+        <input type="button" value="5" onclick="f.inputfield.value+=5" />
+        <input type="button" value="6" onclick="f.inputfield.value+=6" />
+        <input type="button" value="-" onclick="sub()" />
+        <br />
+        <input type="button" value="7" onclick="f.inputfield.value+=7" />
+        <input type="button" value="8" onclick="f.inputfield.value+=8" />
+        <input type="button" value="9" onclick="f.inputfield.value+=9" />
+        <input type="button" value="/" onclick="div()" />
+        <br />
+        <input type="button" value="c" onclick="f.inputfield.value=''" />
+        <input type="button" value="0" onclick="f.inputfield.value+=0" />
+        <input
+          type="button"
+          value="="
+          onclick="f.inputfield.value=eval(f.inputfield.value)"
+        />
+        <input type="button" value="x" onclick="mult()" />
+        <br />
+      </form>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
